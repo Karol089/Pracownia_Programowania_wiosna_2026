@@ -95,5 +95,13 @@ int main()
 
 
     // Zadanie 8 (cytat)
+    /*printf("To jest cytat: \"Czesto uzywam jezyka C\"");*/
 
+
+    // Zadanie 9 (wyswietlanie sciezki)
+    /*printf("C:\\ProgramFiles\\MojaAplikacja\\");*/
+
+
+    // Zadanie 10 (specjalne znaki)
+    /*printf("Specjalne znaki: \\t (tabulacja), \\n (nowa linia), %% (procent), \\\\ (ukosnik wsteczny)");*/
 }
