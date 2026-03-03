@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1772180743 source:d:\185135\pracownia_programowania\zajecia_27_02_2026\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1772545677 source:d:\studia\pracownia_programowania\pracownia_programowania_wiosna_2026\pracownia_programowania\zajecia_27_02_2026\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
