@@ -35,14 +35,54 @@ int main(int argc, char* argv[])
     */
 
     // Zadanie 3 (wartosc bitu na danej pozycji)
-    int x1 = 8, pozycja = 3;
-    if (1 << (pozycja-1) & x1 > 0) {
-        printf("Bit na pozycji %d ma wartosc 1", pozycja);
+    /*
+    int x1 = 5, pozycja = 1;
+    if ((1 << (pozycja-1) & x1) > 0) {
+        printf("Bit na pozycji %d w zapisie dwojkowym liczby %d ma wartosc: 1\n", pozycja, x1);
     } else {
-       printf("Bit na pozycji %d ma wartosc 0", pozycja);
+       printf("Bit na pozycji %d w zapisie dwojkowym liczby %d ma wartosc: 0\n", pozycja, x1);
     }
+    */
 
 
+    // Zadanie 4 (zeruj bit na okresolnej pozycji)
+    /*
+    int x1 = 8, pozycja = 3;
+    x1 = x1 & (~(1 << (pozycja-1)));
+    printf("%d", x1);
+    */
+
+
+
+    // Zadanie 5 (odwroc wszystkie bity)
+    /*
+    int x1 = 10;
+    x1 = ~x1;
+    printf("%d", x1);
+    */
+
+
+    // Zadanie 6 (przesuñ w lewo)
+    /*
+    int x1 = 10;
+    x1 = x1 << 2;
+    printf("%d", x1);
+    */
+
+
+    // Zadanie 7 (przesuñ w prawo)
+    /*
+    int x1 = 10;
+    x1 = x1 >> 1;
+    printf("%d", x1);
+    */
+
+
+    // Zadanie 8 (XOR)
+    /*
+    int x1 = 5, x2 = 7;
+    printf("%d", x1 ^ x2);
+    */
 
 
     return 0;
