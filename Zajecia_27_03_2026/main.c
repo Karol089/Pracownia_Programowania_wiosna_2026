@@ -47,8 +47,18 @@ float* initFloats(){
 }
 
 // Zadanie 7
+float* initFlts(){
+    float* x = (float*)malloc(4 * sizeof(float));
+    for(int i = 0; i < 4; i++){
+        x[i] = 0.5 + i;
+    }
+    return (x + 3);
+}
 
 // Zadanie 8
+void sumToPtr(const int* a, const int* b, int* sum){
+    *sum = *a + *b;
+}
 
 // Zadanie 9
 void sqrCopy(const int* x, int* y){
@@ -56,11 +66,21 @@ void sqrCopy(const int* x, int* y){
 }
 
 // Zadanie 10
+double subPtr(const double* num1, double* const num2){
+    return (*num1 - *num2);
+}
 
 // Zadanie 11
+int sumSqr(const int* num1, int* const num2){
+    return (*num1 * *num1) + (*num2 * *num2);
+}
 
 int main()
 {
+    // Wskazniki - czesc I
+    // Czesc II w pliku 30_03_2026
+    // Zawiera zadania od 2 do 11
+
     // Zadanie 1
     /*
     printf("%zu\n", sizeof(int));
@@ -107,7 +127,22 @@ int main()
     free(x);
     */
 
-    // Zadanie 7 - przeypadek testowy
+    // Zadanie 7 - przypadek testowy
+    /*
+    float* x = initFlts();
+    for(int i = 3; i > -1; i--){
+        printf("%.2f\n", *(x - i));
+    }
+    */
+
+    // Zadanie 8 - przypadek testowy
+    /*
+    const int a = 12, b = 7;
+    int sum = 0;
+    printf("Wartosci: \na = %d \nb = %d\n", a, b);
+    sumToPtr(&a, &b, &sum);
+    printf("Suma: %d", sum);
+    */
 
     // Zadanie 9 - przypadek testowy
     /*
@@ -118,5 +153,18 @@ int main()
     printf("Wartosci po wywolaniu funkcji: \nx = %d \ny = %d\n", x, y);
     */
 
+    // Zadanie 10 - przypadek testowy
+    /*
+    const double num1 = 2.3;
+    double num2 = 3.3;
+    printf("Wynik:\n %.2lf - %.2lf = %.2lf", num1, num2, subPtr(&num1, &num2));
+    */
+
+    // Zadanie 11 - przypadek testowy
+    /*
+    const int num1 = 5;
+    int num2 = 3;
+    printf("Suma kwadratow liczb %d oraz %d wynosi:\n%d", num1, num2, sumSqr(&num1, &num2));
+    */
 
 }
