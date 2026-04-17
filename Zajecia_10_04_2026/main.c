@@ -2,10 +2,12 @@
 #include <stdlib.h>
 
 // Zadania - naglowki
-void findMaxValue(int* numbers, unsigned int size);// 1
-double average(unsigned int n, int* tab);// 2
-int sumSquares(unsigned int n, int* tab);// 3
-void copyArr(unsigned int n, int* tab1, int* tab2);// 4
+void findMaxValue(int* numbers, unsigned int size); // 1
+double average(unsigned int n, int* tab); // 2
+int sumSquares(unsigned int n, int* tab); // 3
+void copyArr(unsigned int n, int* tab1, int* tab2); // 4
+int maxIdx(int n, int* tab); // 9
+int minIdxMax(int n, int* tab); // 10
 
 // Tablice
 int main()
@@ -47,14 +49,37 @@ int main()
     */
 
     // Zadanie 4 - przydpaek testowy
+    /*
     int tab1[3] = {1, 3, 5}, tab2[3];
     int n = sizeof(tab1)/sizeof(int);
     copyArr(n, tab1, tab2);
+
+    printf("Tab1:\n");
     for(int i = 0; i < n; i++){
         printf("%d\n", tab1[i]);
     }
+
+    printf("\nTab2:\n");
     for(int i = 0; i < n; i++){
         printf("%d\n", tab2[i]);
     }
+    */
 
+    // Zadanie 9 - przypadek testowy
+    /*
+    int tab[5] = {30, 3, 15, 6, 31};
+    int n = sizeof(tab)/sizeof(int);
+    printf("Maksymalna liczba stoi pod adresem: \n");
+    printf("%d\n", maxIdx(n, tab));
+    */
+
+    // Zadanie 10 - przypadek testowy
+    /*
+    int tab[5] = {1, 3, 2, 2, 1};
+    int n = sizeof(tab)/sizeof(int);
+    printf("Minimalna liczba stoi pod adresem: \n");
+    printf("%d\n", minIdxMax(n, tab));
+    */
+
+    return 0;
 }
