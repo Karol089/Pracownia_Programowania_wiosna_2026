@@ -52,6 +52,12 @@
 		<Unit filename="z6.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="z7.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="z8.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

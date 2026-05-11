@@ -9,6 +9,9 @@ int sumArray(unsigned int n, unsigned int m, int** tab); // 2
 int maxRowIdx(unsigned int n, unsigned int m, int **tab); // 3
 int minColIdx(unsigned int n, unsigned int m, int **tab); // 4
 void copyMat(unsigned int n, unsigned int m, int** copy, int** origin); // 5
+void copyArr2D(unsigned int n, unsigned int m, int** copy, int** origin); // 6
+void swapElems(unsigned int n, unsigned int m, int tab1[n][m], int tab2[n][m]); // 7
+void swapItems(unsigned int n, unsigned int m, int** tab1, int** tab2); // 8
 
 int main()
 {
@@ -125,6 +128,102 @@ int main()
     for(int row = 0; row < n; row++){
         for(int col = 0; col < m; col++){
             printf("%d ", *(*(tab1 + row) + col));
+        }
+        printf("\n");
+    }
+    */
+
+    // Zadanie 6 - przypdaek testowy
+    /*
+    unsigned int n = 2, m = 3; // deklaracje
+    int** tab1 = (int**)malloc(n * sizeof(int*));
+    for(int r = 0; r < n; r++){
+        tab1[r] = (int*)malloc(m * sizeof(int));
+    }
+    int** tab2 = (int**)malloc(n * sizeof(int*));
+    for(int r = 0; r < n; r++){
+        tab2[r] = (int*)malloc(m * sizeof(int));
+    }
+
+    for(int r = 0; r < n; r++){ // wypelnianie
+        for(int c = 0; c < m; c++){
+            *(*(tab2 + r) + c) = (r + 1) * (c + 1) * 2;
+        }
+    }
+
+    copyArr2D(n, m, tab1, tab2);
+    printf("Przekowiowane elementy:\n");
+    for(int row = 0; row < n; row++){
+        for(int col = 0; col < m; col++){
+            printf("%d ", *(*(tab1 + row) + col));
+        }
+        printf("\n");
+    }
+    */
+
+    // Zadanie 7 - przypdaek testowy
+    /*
+    unsigned int n = 2, m = 3; // deklaracje
+    int tab2[2][3] = {{2, 4, 6}, {8, 10, 12}};
+    int tab3[2][3] = {{3, 6, 9}, {12, 15, 18}};
+
+    swapElems(2, 3, tab2, tab3);
+
+    printf("Po zamianie:\n");
+    printf("Elementy tablicy tab2:\n");
+    for(int row = 0; row < n; row++){
+        for(int col = 0; col < m; col++){
+            printf("%d ", tab2[row][col]);
+        }
+        printf("\n");
+    }
+    printf("Elementy tablicy tab3:\n");
+    for(int row = 0; row < n; row++){
+        for(int col = 0; col < m; col++){
+            printf("%d ", tab3[row][col]);
+        }
+        printf("\n");
+    }
+    */
+
+
+    // Zadanie 8 - przypdaek testowy
+    /*
+    unsigned int n = 2, m = 3; // deklaracje
+    int** tab2 = (int**)malloc(n * sizeof(int*));
+    for(int r = 0; r < n; r++){
+        tab2[r] = (int*)malloc(m * sizeof(int));
+    }
+    int** tab3 = (int**)malloc(n * sizeof(int*));
+    for(int r = 0; r < n; r++){
+        tab3[r] = (int*)malloc(m * sizeof(int));
+    }
+
+    for(int r = 0; r < n; r++){ // wypelnianie
+        for(int c = 0; c < m; c++){
+            *(*(tab2 + r) + c) = (r + 1) * (c + 1) * 2;
+        }
+    }
+    for(int r = 0; r < n; r++){
+        for(int c = 0; c < m; c++){
+            *(*(tab3 + r) + c) = (r + 1) * (c + 1) * 3;
+        }
+    }
+
+    swapItems(n, m, tab2, tab3);
+
+    printf("Po zamianie:\n");
+    printf("Elementy tablicy tab2:\n");
+    for(int row = 0; row < n; row++){
+        for(int col = 0; col < m; col++){
+            printf("%d ", *(*(tab2 + row) + col));
+        }
+        printf("\n");
+    }
+    printf("Elementy tablicy tab3:\n");
+    for(int row = 0; row < n; row++){
+        for(int col = 0; col < m; col++){
+            printf("%d ", *(*(tab3 + row) + col));
         }
         printf("\n");
     }
