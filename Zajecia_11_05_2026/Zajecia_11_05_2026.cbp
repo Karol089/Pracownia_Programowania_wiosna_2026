@@ -34,7 +34,16 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="tabUtils.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="z10.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="z11.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="z12.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="z9.c">
