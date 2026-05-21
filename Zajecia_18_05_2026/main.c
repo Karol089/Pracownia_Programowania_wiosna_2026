@@ -43,6 +43,10 @@ void z7_test(); // 7
 void z8_test(); // 8
 void z9_test(); // 9
 void z10_test(); // 10
+void z11_test(); // 11
+void z12_test(); // 12
+void z14_test(); // 14
+void z17_test(); // 17
 
 
 int main()
@@ -77,7 +81,16 @@ int main()
     //z9_test();
 
     // Zadanie 10 - test
-    z10_test();
+    //z10_test();
+
+    // Zadanie 11 - test
+    //z11_test();
+
+    // Zadanie 14 - test
+    //z14_test();
+
+    // Zadanie 17 - test
+    z17_test();
 
     return 0;
 }

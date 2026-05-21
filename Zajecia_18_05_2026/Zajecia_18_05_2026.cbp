@@ -37,6 +37,18 @@
 		<Unit filename="z10.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="z11.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="z12.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="z14.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="z17.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="z7.c">
 			<Option compilerVar="CC" />
 		</Unit>
